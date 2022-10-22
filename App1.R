@@ -1,14 +1,4 @@
-####################################
-# Data Professor                   #
-# http://youtube.com/dataprofessor #
-# http://github.com/dataprofessor  #
-####################################
 
-# Modified from Winston Chang, 
-# https://shiny.rstudio.com/gallery/shiny-theme-selector.html
-
-# Concepts about Reactive programming used by Shiny, 
-# https://shiny.rstudio.com/articles/reactivity-overview.html
 
 # Load R packages
 library(shiny)
@@ -53,7 +43,7 @@ library(shinythemes)
    # })
     
     output$txtout <- renderText({
-      paste( input$txt1, input$txt2, input$txt3, sep = "  " )
+      paste( input$txt1, input$txt2, input$txt3, sep = " " )
     })
   } # server
   
